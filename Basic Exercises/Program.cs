@@ -4,6 +4,11 @@ namespace Basic_Exercises
 {
     class Program
     {
+        /// <summary>
+        /// This main program is used to execute specific functions that are created off of the site
+        /// https://www.w3resource.com/csharp-exercises/
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
             Program.ex11();
@@ -46,7 +51,9 @@ namespace Basic_Exercises
             Console.WriteLine(14 + -4 * 6 / 11);
             Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
         }
-
+        /// <summary>
+        /// Reverse the order of 2 inputted numbers
+        /// </summary>
         public static void ex5()
         {
             Console.Write("Enter the first number: ");
@@ -57,6 +64,9 @@ namespace Basic_Exercises
             Console.WriteLine("Second number: {0}", int1);
         }
 
+        /// <summary>
+        /// multiply 3 given numbers
+        /// </summary>
         public static void ex6()
         {
             Console.Write("first number: ");
@@ -68,6 +78,9 @@ namespace Basic_Exercises
             Console.WriteLine("{0} x {1} x {2} = {3}", n1, n2, n3, n1 * n2 * n3);
         }
 
+        /// <summary>
+        /// 5 operations enacted on 2 integers
+        /// </summary>
         public static void ex7()
         {
             Console.Write("first number: ");
@@ -96,6 +109,9 @@ namespace Basic_Exercises
             }
         }
 
+        /// <summary>
+        /// Basic if statement checking
+        /// </summary>
         public static void ex11()
         {
             Console.Write("enter your age: ");
