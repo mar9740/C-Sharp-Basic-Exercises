@@ -104,7 +104,7 @@ namespace Basic_Exercises
             int n = int.Parse(Console.ReadLine());
 
             for(int i = 0; i < 10; i++)
-            {
+            {b
                 Console.WriteLine("{0} x {1} = {2}", n, i, n * i);
             }
         }
@@ -125,6 +125,16 @@ namespace Basic_Exercises
             {
                 Console.WriteLine("you look younger than 20");
             }
+        }
+
+        /// <summary>
+        /// Take a string and swap the first and last characters
+        /// </summary>
+        public static void ex16()
+        {
+            Console.Write("Input a string: ");
+            var str = Console.ReadLine();
+            Console.WriteLine(str.Substring(0) + str.Substring(1,str.Length - 1) + str[-1]);
         }
 
 
