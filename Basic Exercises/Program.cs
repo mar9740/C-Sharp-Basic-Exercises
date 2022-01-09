@@ -11,7 +11,7 @@ namespace Basic_Exercises
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Program.ex11();
+            Program.ex56();
         }
 
         /// <summary>
@@ -104,7 +104,7 @@ namespace Basic_Exercises
             int n = int.Parse(Console.ReadLine());
 
             for(int i = 0; i < 10; i++)
-            {b
+            {
                 Console.WriteLine("{0} x {1} = {2}", n, i, n * i);
             }
         }
@@ -137,6 +137,17 @@ namespace Basic_Exercises
             Console.WriteLine(str.Substring(0) + str.Substring(1,str.Length - 1) + str[-1]);
         }
 
-
+        public static void ex56()
+        {
+            Console.WriteLine("Enter a string to reverse: ");
+            string input = Console.ReadLine();
+            string reverse = "";
+            for(int i = input.Length-1; i >= 0; i--)
+            {
+                reverse = reverse + input[i];
+                //Console.WriteLine(input[i]);
+            }
+            Console.WriteLine(reverse);
+        }
     }
 }
