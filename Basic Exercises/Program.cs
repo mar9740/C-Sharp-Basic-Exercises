@@ -149,5 +149,24 @@ namespace Basic_Exercises
             }
             Console.WriteLine(reverse);
         }
+
+        public static void ex57()
+        {
+            Console.WriteLine("Input number to find the greatest products of: ");
+            var input = Console.ReadLine();
+            var list = input.Split(" ");
+            int[] otherList = new int[list.Length];
+            int count = 0;
+
+            var biggestIndex = 1;
+
+            for(int i = 1; i <= otherList.Length; i++)
+            {
+                if(int.Parse(list.GetValue(i)) + otherList.GetValue(i-1) > otherList.GetValue(biggestIndex) + otherList.GetValue(biggestIndex - 1))
+                {
+
+                }
+            }
+        }
     }
 }
