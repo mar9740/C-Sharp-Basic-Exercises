@@ -11,7 +11,7 @@ namespace Basic_Exercises
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Program.ex56();
+            Program.ex93();
         }
 
         /// <summary>
@@ -150,21 +150,35 @@ namespace Basic_Exercises
             Console.WriteLine(reverse);
         }
 
-        public static void ex57()
+        //public static void ex57()
+        //{
+        //    Console.WriteLine("Input number to find the greatest products of: ");
+        //    var input = Console.ReadLine();
+        //    var list = input.Split(" ");
+        //    int[] otherList = new int[list.Length];
+        //    int count = 0;
+
+        //    var biggestIndex = 1;
+
+        //    for(int i = 1; i <= otherList.Length; i++)
+        //    {
+        //        if(int.Parse(list.GetValue(i)) + otherList.GetValue(i-1) > otherList.GetValue(biggestIndex) + otherList.GetValue(biggestIndex - 1))
+        //        {
+
+        //        }
+        //    }
+        //}
+        public static void ex93()
         {
-            Console.WriteLine("Input number to find the greatest products of: ");
-            var input = Console.ReadLine();
-            var list = input.Split(" ");
-            int[] otherList = new int[list.Length];
-            int count = 0;
-
-            var biggestIndex = 1;
-
-            for(int i = 1; i <= otherList.Length; i++)
+            Console.WriteLine("Enter a Number to find the root of: ");
+            string input = Console.ReadLine();
+            int num = Int32.Parse(input);
+            int halfNum = num / 2;
+            for (int i = halfNum; i >= 0; i--)
             {
-                if(int.Parse(list.GetValue(i)) + otherList.GetValue(i-1) > otherList.GetValue(biggestIndex) + otherList.GetValue(biggestIndex - 1))
+                if(i*i == num)
                 {
-
+                    Console.WriteLine(i);
                 }
             }
         }
